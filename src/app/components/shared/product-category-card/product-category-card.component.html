@@ -1,0 +1,21 @@
+<ion-card color="light" class="flex flex-row items-center justify-between">
+  <div [ngClass]="'order-' + (data.imgPriority ? 1 : 2)">
+    <img
+      alt="Silhouette of mountains"
+      src="{{ data.image }}"
+      class=""
+      [ngStyle]="{ 'width.px': data.imgSize }"
+    />
+  </div>
+  <div
+    [ngClass]="'order-' + (data.imgPriority ? 2 : 1)"
+    class="px-16 flex flex-col items-start gap-10"
+  >
+    <ion-card-title class="text-5xl font-roboto font-bold">{{
+      data.title
+    }}</ion-card-title>
+    <p class="text-lg text-primary/70">{{ data.description }}</p>
+
+    <ion-button class="font-roboto">Shop {{ data.btnTitle }}</ion-button>
+  </div>
+</ion-card>

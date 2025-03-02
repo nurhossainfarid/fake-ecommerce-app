@@ -5,8 +5,9 @@ import {
   IonTitle,
   IonContent,
 } from '@ionic/angular/standalone';
-import { BannerComponent } from '../../components/banner/banner.component';
-import { HeaderComponent } from '../../components/header/header.component';
+import { BannerComponent } from '../../components/modules/banner/banner.component';
+import { HeaderComponent } from '../../components/shared/header/header.component';
+import { HomeProductComponent } from '../../components/modules/home-product/home-product.component';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,7 @@ import { HeaderComponent } from '../../components/header/header.component';
     IonContent,
     BannerComponent,
     HeaderComponent,
+    HomeProductComponent,
   ],
 })
 export class HomePage {

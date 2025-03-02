@@ -1,0 +1,61 @@
+<div class="bg-medium p-16">
+  <p class="text-primary text-2xl font-roboto font-bold">
+    Meet the internet's favorite skincare.
+  </p>
+  <div class="grid grid-cols-4 gap-4 mt-8">
+    <app-product-card></app-product-card>
+    <app-product-card></app-product-card>
+    <app-product-card></app-product-card>
+    <app-product-card></app-product-card>
+  </div>
+  <div class="flex flex-col gap-10">
+    <app-product-category-card
+      [data]="{
+        title: 'Hair.',
+        description:
+          'Start from the top: great hair starts with a healthy scalp. We’ve got you covered with a range of expert formulas to keep your hair in tip-top shape and your style in mint condition.',
+        image:
+          'https://theme-refresh-demo.myshopify.com/cdn/shop/files/image_81.jpg?v=1650476862&width=1070',
+        imgPriority: false,
+        imgSize: 1200,
+        btnTitle: 'Hair'
+      }"
+    ></app-product-category-card>
+    <app-product-category-card
+      [data]="{
+        title: 'Body.',
+        description:
+          'Caring for your body shouldn’t start and end with a hot shower. Show it some love with powerhouse formulas to keep your skin clean and healthy.',
+        image:
+          'https://theme-refresh-demo.myshopify.com/cdn/shop/files/image_80.jpg?v=1650476746&width=1070',
+        imgPriority: true,
+        imgSize: 500,
+        btnTitle: 'Body'
+      }"
+    ></app-product-category-card>
+    <app-product-category-card
+      [data]="{
+        title: 'Face.',
+        description:
+          'Let’s face it. A lot of men just aren’t that into skincare. We’re going to change all that. Because when you look great, you feel great. It’s that simple.',
+        image:
+          'https://theme-refresh-demo.myshopify.com/cdn/shop/files/04.jpg?v=1650476601&width=1070',
+        imgPriority: false,
+        imgSize: 1200,
+        btnTitle: 'Face'
+      }"
+    ></app-product-category-card>
+    <app-product-category-card
+      [data]="{
+        title: 'Kits.',
+        description:
+          'Bundle up and save on our best combo kits for face, body, and hair. These thoughtful combinations have everything you need to look great and feel fresh, day after day.',
+        image:
+          'https://theme-refresh-demo.myshopify.com/cdn/shop/files/huron_pdp_shower-kit-1-mobile_1125x_a05dfd42-ff0a-4b45-9044-7de3d269d157.webp?v=1650477089&width=1070',
+        imgPriority: true,
+        imgSize: 500,
+        btnTitle: 'Kits'
+      }"
+    ></app-product-category-card>
+  </div>
+</div>
